@@ -1,14 +1,23 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
+import styled from 'styled-components';
+
+import Todo from './Todo';
+import './App.css';
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Hello World!
-        </h1>
-      </header>
-    </div>
+    <Main>
+      <Todo />
+      <Todo />
+      <Todo />
+      <Todo />
+    </Main>
   );
 }
 
